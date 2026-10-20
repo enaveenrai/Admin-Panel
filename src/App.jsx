@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import Dashboard from "./components/Dashboard/Dashboard";
@@ -17,11 +18,9 @@ function App() {
         >
           <FiMenu size={22} />
         </button>
-
-        
       </header>
 
-      {/* Overlay */}
+      {/* Mobile overlay */}
       {sidebarOpen && (
         <div
           className="fixed inset-0 z-40 bg-black/40 lg:hidden"
@@ -33,17 +32,19 @@ function App() {
         {/* Sidebar */}
         <aside
           className={`
+            fixed inset-y-0 left-0 z-50
+            w-64 overflow-y-auto bg-stone-100 p-3 shadow-xl
+            transition-transform duration-300
             ${
-              sidebarOpen
-                ? "fixed inset-y-0 left-0 z-50 w-64 overflow-y-auto bg-stone-100 p-3 shadow-xl"
-                : "hidden"
+              sidebarOpen ? "translate-x-0" : "-translate-x-full"
             }
-            lg:static lg:block lg:w-auto
-            lg:overflow-visible lg:bg-transparent
+            lg:translate-x-0
+            lg:left-4 lg:top-4 lg:bottom-4
+            lg:w-[230px] lg:bg-transparent
             lg:p-0 lg:shadow-none
           `}
         >
-          {/* Close button inside sidebar */}
+          {/* Mobile close button */}
           <div className="mb-3 flex justify-end lg:hidden">
             <button
               onClick={() => setSidebarOpen(false)}
@@ -58,7 +59,7 @@ function App() {
         </aside>
 
         {/* Dashboard */}
-        <section className="min-w-0">
+        <section className="min-w-0 lg:col-start-2">
           <Dashboard />
         </section>
       </main>
