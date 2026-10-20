@@ -1,16 +1,61 @@
-# React + Vite
+# Admin Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive admin dashboard built with React and Tailwind CSS. It provides a clean interface for viewing statistics, monitoring activity, and managing dashboard data.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Responsive dashboard layout
+* Mobile-friendly sidebar navigation
+* Search menu for quick navigation
+* Statistics cards for key metrics
+* Activity graph and data visualizations
+* Usage analytics
+* Responsive charts and components
+* Clean and modern user interface
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **React 19** – Frontend library
+* **Vite** – Development server and build tool
+* **Tailwind CSS 4** – Styling and responsive design
+* **React Icons** – Icons
+* **Recharts** – Data visualization and charts
+* **cmdk** – Command menu and search functionality
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these steps to run the project locally.
+
+### 1. Clone the repository
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd admin-panel
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in your terminal to view the dashboard.
+
+## Project Purpose
+
+This project was created to practice and demonstrate frontend development skills using React, Tailwind CSS, and modern web development tools.
+
+## License
+
+This project is available for learning and personal use.
