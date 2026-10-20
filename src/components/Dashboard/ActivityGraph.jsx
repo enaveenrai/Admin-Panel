@@ -23,7 +23,7 @@ const data = [
 
 const ActivityGraph = () => {
   return (
-    <div className="col-span-8 overflow-hidden rounded border border-stone-300 bg-white">
+    <div className="col-span-12 lg:col-span-8 overflow-hidden rounded border border-stone-300 bg-white">
       <div className="p-4">
         <h3 className="flex items-center gap-1.5 font-medium text-stone-700 capitalize">
           <FiUser /> Activity

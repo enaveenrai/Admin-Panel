@@ -1,3 +1,15 @@
+// import Dashboard from "./components/Dashboard/Dashboard";
+// import Sidebar from "./components/Sidebar/Sidebar";
+
+// function App() {
+//   return <main className="grid gap-4 p-4 grid-cols-[230px_1fr]">
+
+//     <Sidebar/>
+//     <Dashboard/>
+//   </main>;
+// }
+
+// export default App;
 
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
@@ -18,6 +30,7 @@ function App() {
         >
           <FiMenu size={22} />
         </button>
+        <h1 className="text-lg font-bold">Admin Panel</h1>
       </header>
 
       {/* Mobile overlay */}
@@ -32,12 +45,9 @@ function App() {
         {/* Sidebar */}
         <aside
           className={`
-            fixed inset-y-0 left-0 z-50
-            w-64 overflow-y-auto bg-stone-100 p-3 shadow-xl
+            fixed inset-y-0 left-0 z-50 w-64 overflow-x-visible overflow-y-auto bg-stone-100 p-4 shadow-xl
             transition-transform duration-300
-            ${
-              sidebarOpen ? "translate-x-0" : "-translate-x-full"
-            }
+            ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}
             lg:translate-x-0
             lg:left-4 lg:top-4 lg:bottom-4
             lg:w-[230px] lg:bg-transparent
